@@ -1,0 +1,15 @@
+import pandas as pd
+
+df = pd.read_csv("sales_dataset.csv")
+print("First five rows:")
+print(df.head())
+print("\nLast five rows:")
+print(df.tail())
+print("\nRows and columns:", df.shape)
+print("\nColumn names:", df.columns.tolist())
+print("\nData types:")
+print(df.dtypes)
+print("\nDataFrame information:")
+df.info()
+print("\nNumerical summary:")
+print(df.describe())
